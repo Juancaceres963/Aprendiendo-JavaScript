@@ -1,12 +1,12 @@
-console.log("Pagina de Arrays")
+console.log("Pagina de Arrays");
 
 // Crear un array
 
-const numeros = [10 ,11, 12, 14]
+const numeros = [10, 11, 12, 14];
 console.table(numeros);
 
 // Accediendo a un elementos especifico de un array
-const meses = new Array( "enero", "febrero", "marzo");
+const meses = new Array("enero", "febrero", "marzo");
 console.log(meses[1]);
 
 // Podemos agregar elementos al array de la siguiente forma
@@ -19,12 +19,12 @@ meses.push("marzo");
 console.log(meses);
 
 // El metodo unshift agrega elementos a un arraypero al principio del array
-meses.unshift("Diciembre")
+meses.unshift("Diciembre");
 console.log(meses);
 
 // Eliminando elemntos de un array
 // Si quisieras eliminar el ultimo elemento de un array, el metodo Pop elimina el ultimo
-meses.pop()
+meses.pop();
 console.log(meses);
 
 // Para eliminar elemntos del principio podemos uyilizar el metodo shift
@@ -32,7 +32,7 @@ meses.shift();
 console.log(meses);
 
 // Podemos eliminar un rango de un arraglo
-// El metodo splice puede eliminar en un rango de un arreglo, este toma dos parametros. 
+// El metodo splice puede eliminar en un rango de un arreglo, este toma dos parametros.
 //El 1ro es el numero de index por el que comenzara a eliminar,
 // y el 2do es el numero de index hasta el que eliminara sin contarlo.
 
@@ -48,8 +48,8 @@ console.log(meses);
 meses.sort();
 console.log(meses);
 
-// Un array puede tener cualquier tipo de datos mixtos o no adentro de el 
-const array = ["hola", 2, true, null, undefined]
+// Un array puede tener cualquier tipo de datos mixtos o no adentro de el
+const array = ["hola", 2, true, null, undefined];
 console.table(array);
 // Cons Array.isArray se puede rectificar si una variable es un arreglo
 console.log(Array.isArray(array));

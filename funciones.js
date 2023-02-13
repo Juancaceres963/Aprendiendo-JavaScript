@@ -55,3 +55,25 @@ suma2(26, 106);
 (function(tecnologia) {
     console.log(" Soy una IIFI, enmseñandote " + tecnologia)
 })("JavaScript");
+
+// Metodos 
+// Los metodos son funciones adentro de objetos, siguen siendo igual que las funciones pero simplemente estan dentro de un obejto
+console.log("Seccion de Metodos (Objetos)");
+
+const musica = {
+    reproducir: function(cancion) {
+        console.log("Estas escuchando la cancion : " + cancion);
+    },
+    pausar: function() {
+        console.log("Musica pausada..")
+    }
+}
+//Se pueden crear funciones de objetos fuera del objeto, solo hay que asegurarse de darle el nombre del objeto
+musica.borrar = function(id) {
+    console.log("Borrando la cancion con el ID : " + id)
+}
+
+musica.reproducir("Ella es calladita");
+musica.pausar();
+musica.reproducir("Eres mi chica ideal");
+musica.borrar(234);

@@ -46,6 +46,20 @@ suma2();
 suma2(63);
 suma2(26, 106);
 
+// Otro ejemplo algo mas complicado.  Y utilizando arrow functions
+const suma3 = (a = 0, b = 0) => {
+    return a + b;
+}
+//Consideraciones con las arrow funct. Si solo tienes un parametro, puedes no usar los parentesis para el parametro
+// Al retornar un solo valor se puede quitar el return y las llaves. Por defaul lee el codigo bien
+const multiplicar = a => a * 5;
+
+let total;
+let resultadoSuma = suma3(34, 6);
+total = multiplicar(resultadoSuma);
+
+console.log(total);
+
 // Lo bueno de pasar parametros es qu ehacemos a la funcion mas inteligente y practica para utilizarla en diferentes esenarios
 
 // Otro tipo de funciones son las funciones IIFI
@@ -77,3 +91,11 @@ musica.reproducir("Ella es calladita");
 musica.pausar();
 musica.reproducir("Eres mi chica ideal");
 musica.borrar(234);
+
+// Arrow Function con function expresion
+console.log("Seccion Arrow Functions");
+
+let viajando = destino => "El proximo viaje sera: " + destino;
+
+let viaje = viajando("Madrid")
+console.log(viaje);

@@ -58,3 +58,21 @@ let master = "Master ";
 
 console.log(master.repeat(3));
 console.log(puppets);
+
+// Seccion de new Date y sus derivados
+console.log("Segmento de new Date");
+
+const diaHoy = new Date();
+console.log(diaHoy);
+let valor = diaHoy;
+// Retronara el mes en el que estamos, siendo enero = 0
+valor = diaHoy.getMonth();
+// Existen muchas mas sub-funciones de new Date, visual estudia las ofrece automaticas cuando empiezas a escribir
+console.log(valor);
+
+// Como saber que dia de la semana naciste 
+// GetDay nos dice el dia de la semana, siendo domingo = 0
+
+const unDia = new Date();
+let dia = unDia.getDay();
+console.log(dia);

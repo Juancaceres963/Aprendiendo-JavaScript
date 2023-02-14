@@ -46,3 +46,30 @@ console.log("Seccion de operador ternario")
 
 let logueado = false;
 console.log( logueado ? "Estas logueado" : "Iniciar secion");
+
+// Seccion de Switch condicionales 
+console.log("Seccion de Condicional Shitch statement");
+
+const metodoDePago = "er";
+
+switch(metodoDePago) {
+    case "Efectivo":
+        console.log(`Pagaste con ${metodoDePago}, muchas gracias por su compra`);
+        break;
+    case "Tarjeta":
+        console.log(`Pagaste con ${metodoDePago}, Procesando su pago, espere un momento`);
+        break;
+    case "Cheque":
+        console.log(`Pagaste con ${metodoDePago}, Revisaremos qu etenga fondos, espere un momento`);
+        break;
+    default:
+        noPagaste();
+        break;
+};
+
+// Las funciones sin ningun problema pueden ir dentro de un if, switch sin problema alguno. 
+//Al igual que un if tambien puede ir dentro de una funcion 
+
+function noPagaste() {
+    console.log("Metodo de pago invalido");
+}

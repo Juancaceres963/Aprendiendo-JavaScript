@@ -26,5 +26,5 @@ if (tema){
     var tema = "Rap";
     console.log("dentor del if " + tema);
 };
-
-// En este esenario podemos apreciar que JavaScript no entiende y no encuentra esa variable ya que no esta definida en el scope global
+// En este esenario podemos apreciar que JavaScript no entiende y no encuentra esa 
+//variable ya que no esta definida en el scope global
